@@ -1,54 +1,78 @@
-#nettside{
-    text-align: center;
-    background-color: white;
-    padding:0%;
-    font-family: sans-serif
+body {
+    margin: 0;
 }
-.header{
-    width: 100%;
-    height: 100px; 
-    text-align: left;
-}
-#logo{
-    height: 100px;
-}
-.innhold{
-    background-color: rgb(236, 226, 226);
-    border-radius: 10px;
-    padding-bottom: 30px;
-}
-#overskrift{padding-top: 30px;}
 
-#om_oss_innhold{
-    width: 98%;
-    height: 250px;
-    padding: 10px;
+/*INDEX*/
+#om_oss_innhold {
+    height: 200px;
 }
-#tilbud_innhold{
-    width: 98%;
-    height:350px;
-    padding: 10px;
+
+#tilbud_innhold {
+    height: 300px;
 }
-#tilbud_container{
+
+#tilbud_container {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+
 }
-.tilbud{
+
+.tilbud {
     height: 200px;
     width: 30%;
-    padding:2%;
 }
-#om_utstillinger{
-    width: 100%;
+
+/*Utstillinger*/
+#om_utstillinger {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
     height: 350px;
 }
 
-#utstillinger_container{
-   display: flex;
-   flex-direction: row; 
+#utstillinger_container {
+    display: flex;
+    justify-content: space-around;
 }
-.utstilling{
+
+.utstilling {
     width: 25%;
     height: 200px;
-    
+}
+
+/*Begge*/
+#nettside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    width: 100%;
+
+}
+
+.innhold_container {
+    width: 95%;
+    background-color: rgb(236, 226, 226);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.innhold_container>p {
+    text-align: left;
+    margin: 0.5rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid lightgray;
+}
+
+#logo {
+    height: 100%;
+    margin-left: 5%;
 }
