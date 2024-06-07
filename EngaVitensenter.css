@@ -42,7 +42,7 @@ body {
 }
 
 /*Begge*/
-#nettside {
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,6 @@ body {
     width: 100%;
 
 }
-
 .innhold_container {
     width: 95%;
     background-color: rgb(236, 226, 226);
@@ -71,7 +70,9 @@ body {
     height: 100px;
     border-bottom: 2px solid lightgray;
 }
-
+.overskrift {
+    font-size: 2em;
+}
 #logo {
     height: 100%;
     margin-left: 5%;
